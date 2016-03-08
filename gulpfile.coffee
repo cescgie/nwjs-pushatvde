@@ -32,20 +32,20 @@ gulp.task 'clean', ->
 
 # Only runs on OSX (requires XCode properly configured)
 gulp.task 'sign:osx64', ['build:osx64'], ->
-  shelljs.exec 'codesign -v -f -s "Alexandru Rosianu Apps" ./build/Starter/osx64/Starter.app/Contents/Frameworks/*'
-  shelljs.exec 'codesign -v -f -s "Alexandru Rosianu Apps" ./build/Starter/osx64/Starter.app'
-  shelljs.exec 'codesign -v --display ./build/Starter/osx64/Starter.app'
-  shelljs.exec 'codesign -v --verify ./build/Starter/osx64/Starter.app'
+  shelljs.exec 'codesign -v -f -s "Yoggi Firmanda Apps" ./build/Pushatvde/osx64/Pushatvde.app/Contents/Frameworks/*'
+  shelljs.exec 'codesign -v -f -s "Yoggi Firmanda Apps" ./build/Pushatvde/osx64/Pushatvde.app'
+  shelljs.exec 'codesign -v --display ./build/Pushatvde/osx64/Pushatvde.app'
+  shelljs.exec 'codesign -v --verify ./build/Pushatvde/osx64/Pushatvde.app'
 
 # Create a DMG for osx64; only works on OS X because of appdmg
 gulp.task 'pack:osx64', ['sign:osx64'], ->
   shelljs.mkdir '-p', './dist'            # appdmg fails if ./dist doesn't exist
-  shelljs.rm '-f', './dist/Starter.dmg'   # appdmg fails if the dmg already exists
+  shelljs.rm '-f', './dist/Pushatvde.dmg'   # appdmg fails if the dmg already exists
 
   gulp.src []
     .pipe require('gulp-appdmg')
       source: './assets-osx/dmg.json'
-      target: './dist/Starter.dmg'
+      target: './dist/Pushatvde.dmg'
 
 # Create a nsis installer for win32; must have `makensis` installed
 gulp.task 'pack:win32', ['build:win32'], ->
