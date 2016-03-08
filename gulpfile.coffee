@@ -25,7 +25,7 @@ gulp.task 'clean', ->
         macZip: true
         macPlist:
           NSHumanReadableCopyright: 'yoggifirmanda.com'
-          CFBundleIdentifier: 'com.cescgie.starter'
+          CFBundleIdentifier: 'com.cescgie.pushatvde'
       .on 'end', ->
         if process.argv.indexOf('--toolbar') > 0
           shelljs.sed '-i', '"toolbar": true', '"toolbar": false', './src/package.json'
@@ -58,20 +58,20 @@ gulp.task 'pack:win32', ['build:win32'], ->
       shelljs.rm '-rf', './build/linux'
 
       move_opt = gulp.src [
-        './assets-linux/starter.desktop'
+        './assets-linux/pushatvde.desktop'
         './assets-linux/after-install.sh'
         './assets-linux/after-remove.sh'
-        './build/Starter/linux' + arch + '/**'
+        './build/Pushatvde/linux' + arch + '/**'
       ]
-        .pipe gulp.dest './build/linux/opt/starter'
+        .pipe gulp.dest './build/linux/opt/pushatvde'
 
-      move_png48 = gulp.src './assets-linux/icons/48/starter.png'
+      move_png48 = gulp.src './assets-linux/icons/48/pushatvde.png'
         .pipe gulp.dest './build/linux/usr/share/icons/hicolor/48x48/apps'
 
-      move_png256 = gulp.src './assets-linux/icons/256/starter.png'
+      move_png256 = gulp.src './assets-linux/icons/256/pushatvde.png'
         .pipe gulp.dest './build/linux/usr/share/icons/hicolor/256x256/apps'
 
-      move_svg = gulp.src './assets-linux/icons/scalable/starter.png'
+      move_svg = gulp.src './assets-linux/icons/scalable/pushatvde.png'
         .pipe gulp.dest './build/linux/usr/share/icons/hicolor/scalable/apps'
 
       mergeStream move_opt, move_png48, move_png256, move_svg
@@ -79,12 +79,12 @@ gulp.task 'pack:win32', ['build:win32'], ->
           shelljs.cd './build/linux'
 
           port = if arch == 32 then 'i386' else 'x86_64'
-          output = "../../dist/Starter_linux#{arch}.#{target}"
+          output = "../../dist/Pushatvde_linux#{arch}.#{target}"
 
           shelljs.mkdir '-p', '../../dist' # it fails if the dir doesn't exist
           shelljs.rm '-f', output          # it fails if the package already exists
 
-          shelljs.exec "fpm -s dir -t #{target} -a #{port} --rpm-os linux -n starter --after-install ./opt/starter/after-install.sh --after-remove ./opt/starter/after-remove.sh --license MIT --category Chat --url \"http://yoggifirmanda.com\" --description \"A sample NW.js app.\" -m \"Yoggi Firmanda <email@yoggifirmanda.com>\" -p #{output} -v #{manifest.version} ."
+          shelljs.exec "fpm -s dir -t #{target} -a #{port} --rpm-os linux -n pushatvde --after-install ./opt/pushatvde/after-install.sh --after-remove ./opt/pushatvde/after-remove.sh --license MIT --category Chat --url \"http://yoggifirmanda.com\" --description \"A sample NW.js app.\" -m \"Yoggi Firmanda <email@yoggifirmanda.com>\" -p #{output} -v #{manifest.version} ."
           shelljs.cd '../..'
 
 # Make packages for all platforms
@@ -93,11 +93,11 @@ gulp.task 'pack:all', (callback) ->
 
 # Build osx64 and run it
 gulp.task 'run:osx64', ['build:osx64'], ->
-  shelljs.exec 'open ./build/Starter/osx64/Starter.app'
+  shelljs.exec 'open ./build/Pushatvde/osx64/Pushatvde.app'
 
 # Run osx64 without building
 gulp.task 'open:osx64', ->
-  shelljs.exec 'open ./build/Starter/osx64/Starter.app'
+  shelljs.exec 'open ./build/Pushatvde/osx64/Pushatvde.app'
 
 # Upload release to GitHub
 gulp.task 'release', ['pack:all'], (callback) ->

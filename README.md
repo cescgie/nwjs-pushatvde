@@ -2,7 +2,7 @@
 
 [![Downloads](https://img.shields.io/github/downloads/cescgie/nwjs-pushatvde/latest/total.svg)](https://github.com/cescgie/nwjs-pushatvde/releases/latest)
 
-Bring [pushatv.de](http://pushatv.de) to your OS X, Windows or Linux desktop. Built with [NW.js](http://nwjs.io/). Affiliated with Pushatv.de.
+Bring [pushatv.de](http://pushatv.de) to your OS X or Windows desktop. Built with [NW.js](http://nwjs.io/). Affiliated with Pushatv.de.
 
 ## Features
 * Single page app
