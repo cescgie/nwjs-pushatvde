@@ -1,5 +1,7 @@
 # Pushatv.de for Desktop
 
+![general version](http://img.shields.io/badge/version-0.1.1-green.svg)
+[![License](http://img.shields.io/:license-mit-blue.svg)](http://doge.mit-license.org)
 [![Downloads](https://img.shields.io/github/downloads/cescgie/nwjs-pushatvde/latest/total.svg)](https://github.com/cescgie/nwjs-pushatvde/releases/latest)
 
 Bring [pushatv.de](http://pushatv.de) to your OS X or Windows desktop. Built with [NW.js](http://nwjs.io/). Affiliated with Pushatv.de.
