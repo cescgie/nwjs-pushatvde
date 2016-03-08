@@ -1,0 +1,9 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Pushatvde
+Icon=pushatvde
+Exec=/opt/pushatvde/Pushatvde
+Comment=Pushatvde
+Categories=GNOME;GTK;Development;Documentation;
+Terminal=false

@@ -1,0 +1,32 @@
+{
+  "main": "app.html",
+  "name": "Pushatvde",
+  "version": "0.1.0",
+  "app-id": "com.cescgie.pushatvde",
+  "chromium-args": "--disable-setuid-sandbox",
+  "window": {
+    "width": 1024,
+    "height": 728,
+    "title": "Pushatvde",
+    "icon": "icons/icon.png",
+    "toolbar": false,
+    "show": false
+  },
+  "webkit": {
+    "plugin": true
+  },
+  "dependencies": {
+    "async": "^1.0.0",
+    "auto-launch": "^0.1.18",
+    "jfs": "^0.2.5",
+    "request": "^2.56.0",
+    "semver": "^4.3.5"
+  },
+  "manifestUrl": "https://raw.githubusercontent.com/cescgie/nwjs-pushatvde/master/src/package.json",
+  "packages": {
+    "osx64": "https://github.com/cescgie/nwjs-pushatvde/releases/download/v0.1.0/Pushatvde.dmg",
+    "win32": "https://github.com/cescgie/nwjs-pushatvde/releases/download/v0.1.0/PushatvdeSetup.exe",
+    "linux32": "https://github.com/cescgie/nwjs-pushatvde/releases/download/v0.1.0/Pushatvde_linux32.deb",
+    "linux64": "https://github.com/cescgie/nwjs-pushatvde/releases/download/v0.1.0/Pushatvde_linux64.deb"
+  }
+}
