@@ -1,7 +1,7 @@
 {
   "name": "pushatvde",
-  "version": "0.1.1",
-  "description": "NW.js starter project powered by Gulp.",
+  "version": "0.1.2",
+  "description": "NW.js pushatv.de project powered by Gulp.",
   "repository": {
     "type": "git",
     "url": "git@github.com:cescgie/nwjs-pushatvde.git"
