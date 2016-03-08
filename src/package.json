@@ -24,7 +24,7 @@
   },
   "manifestUrl": "https://raw.githubusercontent.com/cescgie/nwjs-pushatvde/master/src/package.json",
   "packages": {
-    "osx64": "https://github.com/cescgie/nwjs-pushatvde/releases/download/v0.1.0/Pushatvde.dmg",
+    "osx64": "https://github.com/cescgie/nwjs-pushatvde/releases/download/v0.1.1/Pushatvde.dmg",
     "win32": "https://github.com/cescgie/nwjs-pushatvde/releases/download/v0.1.0/PushatvdeSetup.exe",
     "linux32": "https://github.com/cescgie/nwjs-pushatvde/releases/download/v0.1.0/Pushatvde_linux32.deb",
     "linux64": "https://github.com/cescgie/nwjs-pushatvde/releases/download/v0.1.0/Pushatvde_linux64.deb"

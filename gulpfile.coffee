@@ -24,8 +24,8 @@ gulp.task 'clean', ->
         macIcns: './assets-osx/icon.icns'
         macZip: true
         macPlist:
-          NSHumanReadableCopyright: 'aluxian.com'
-          CFBundleIdentifier: 'com.aluxian.starter'
+          NSHumanReadableCopyright: 'yoggifirmanda.com'
+          CFBundleIdentifier: 'com.cescgie.starter'
       .on 'end', ->
         if process.argv.indexOf('--toolbar') > 0
           shelljs.sed '-i', '"toolbar": true', '"toolbar": false', './src/package.json'
@@ -84,7 +84,7 @@ gulp.task 'pack:win32', ['build:win32'], ->
           shelljs.mkdir '-p', '../../dist' # it fails if the dir doesn't exist
           shelljs.rm '-f', output          # it fails if the package already exists
 
-          shelljs.exec "fpm -s dir -t #{target} -a #{port} --rpm-os linux -n starter --after-install ./opt/starter/after-install.sh --after-remove ./opt/starter/after-remove.sh --license MIT --category Chat --url \"https://example.com\" --description \"A sample NW.js app.\" -m \"Alexandru Rosianu <me@aluxian.com>\" -p #{output} -v #{manifest.version} ."
+          shelljs.exec "fpm -s dir -t #{target} -a #{port} --rpm-os linux -n starter --after-install ./opt/starter/after-install.sh --after-remove ./opt/starter/after-remove.sh --license MIT --category Chat --url \"http://yoggifirmanda.com\" --description \"A sample NW.js app.\" -m \"Yoggi Firmanda <email@yoggifirmanda.com>\" -p #{output} -v #{manifest.version} ."
           shelljs.cd '../..'
 
 # Make packages for all platforms
