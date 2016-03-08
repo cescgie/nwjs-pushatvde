@@ -11,10 +11,10 @@ Bring [pushatv.de](http://pushatv.de) to your OS X or Windows desktop. Built wit
 * Ajax search
 * Playlists (upcoming videos)
 * Automatic play (as soon as the current video ends)
-* Play/Pause/Next/Previous/Volume(on or off)/Back to first video and Slider for video time controls
+* Play/Pause/Next/Previous/Volume/Replay playlist and Slider for video time controls
+* Drag controls to reorder the playlist items
 * Use the Pushatv.de API to retrieve the pre-populated video datas using the ID
 * Save the current playlist in Database
-* Add drag controls to reorder the playlist items
 
 ## Contributions
 
