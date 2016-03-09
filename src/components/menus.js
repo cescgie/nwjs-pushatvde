@@ -99,11 +99,6 @@ module.exports = {
           }
         });
       }
-    }, {
-      label: 'Launch Dev Tools',
-      click: function() {
-        win.showDevTools();
-      }
     }].map(function(item) {
       // If the item has a 'setting' property, use some predefined values
       if (item.setting) {

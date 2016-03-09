@@ -24,7 +24,7 @@ gulp.task 'clean', ->
         macIcns: './assets-osx/icon.icns'
         macZip: true
         macPlist:
-          NSHumanReadableCopyright: 'yoggifirmanda.com'
+          NSHumanReadableCopyright: 'Copyright © Yoggi Firmanda'
           CFBundleIdentifier: 'com.cescgie.pushatvde'
       .on 'end', ->
         if process.argv.indexOf('--toolbar') > 0

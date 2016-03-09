@@ -4,7 +4,7 @@
   "description": "NW.js pushatv.de project powered by Gulp.",
   "repository": {
     "type": "git",
-    "url": "git@github.com:cescgie/nwjs-pushatvde.git"
+    "url": "https://github.com/cescgie/nwjs-pushatvde.git"
   },
   "scripts": {
     "postinstall": "(cd src && npm install)"
