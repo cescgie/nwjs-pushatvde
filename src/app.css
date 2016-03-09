@@ -6,3 +6,39 @@ html, body, iframe {
   height: 100%;
   overflow: hidden;
 }
+
+/* Splashscreen */
+#splashscreen {
+  position:absolute;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  width:100%;
+  background-color:#000;
+  color:#fff;
+  z-index: 5;
+}
+.vertical-align-div{
+  display: flex;
+  width:100%;
+  justify-content: center; /* align horizontal */
+  align-items: center; /* align vertical*/
+}
+#progressbar {
+  background-color: #fff;
+  border-radius: 13px; /* (height of inner div) / 2 + padding */
+  padding: 3px;
+  width:100%;
+}
+#progressbar > div {
+   background-color: orange;
+   width: 0%; /* Adjust with JavaScript */
+   height: 20px;
+   border-radius: 10px;
+}
+.div-loading{
+  width:50%;
+  text-align: center;
+  font-family: sans-serif;
+}
