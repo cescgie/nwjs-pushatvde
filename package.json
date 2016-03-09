@@ -1,6 +1,6 @@
 {
   "name": "pushatvde",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "NW.js pushatv.de project powered by Gulp.",
   "repository": {
     "type": "git",

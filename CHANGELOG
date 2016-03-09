@@ -3,3 +3,9 @@
 
 0.1.1
 - First build version of Pushatvde
+
+0.1.2
+- GUI menu bugs fixed
+- Linux32 and Linux64 added
+- Splashscreen with Progressbar
+- Icons added

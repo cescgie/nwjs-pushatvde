@@ -1,7 +1,7 @@
 {
   "main": "app.html",
   "name": "Pushatvde",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "app-id": "com.cescgie.pushatvde",
   "chromium-args": "--disable-setuid-sandbox",
   "window": {
