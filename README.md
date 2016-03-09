@@ -4,7 +4,7 @@
 [![License](http://img.shields.io/:license-mit-blue.svg)](http://doge.mit-license.org)
 [![Downloads](https://img.shields.io/github/downloads/cescgie/nwjs-pushatvde/latest/total.svg)](https://github.com/cescgie/nwjs-pushatvde/releases/latest)
 
-Bring [pushatv.de](http://pushatv.de) to your OS X, Windows or Linux desktop. Built with [NW.js](http://nwjs.io/). Affiliated with Pushatv.de.
+Desktop version of [pushatv.de](http://pushatv.de). Available on OS X, Windows and Linux. Built with [NW.js](http://nwjs.io/). Affiliated with Pushatv.de.
 
 ## Features
 * Single page app
