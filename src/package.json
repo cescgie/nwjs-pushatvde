@@ -8,9 +8,11 @@
     "width": 1024,
     "height": 728,
     "title": "Pushatvde",
-    "icon": "icons/icon.png",
+    "icon": "images/icon_tray.png",
     "toolbar": false,
-    "show": false
+    "show": false,
+    "min_width": 300,
+    "min_height": 450
   },
   "webkit": {
     "plugin": true
