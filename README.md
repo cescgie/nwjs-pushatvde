@@ -32,4 +32,4 @@ Contributions are welcome! For feature requests and bug reports please [submit a
 
 ## License
 
-Project is licensed under [MIT](https://en.wikipedia.org/wiki/MIT_License), which means you are free to do anything with full of my work as long as you provide attribution back to me. Thanks !
+Project is licensed under [MIT](https://en.wikipedia.org/wiki/MIT_License), which means you are free to do anything with full of my work as long as you provide attribution back to me. Thanks!
